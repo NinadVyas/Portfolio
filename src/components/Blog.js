@@ -1,7 +1,5 @@
-import './App.css';
-import { FaLinkedin,FaTwitter,FaGithub,FaYoutubeSquare } from 'react-icons/fa';
+import '../components/Blog.css';
 import { FiEdit } from "react-icons/fi";
-import Blog from "../src/components/Blog.js"
 
 function App() {
   return (
@@ -18,29 +16,10 @@ function App() {
   I am a passionate web developer who turns innovative ideas into reality with clean and efficient code.
   </p>
   </div>
-  <div className='div2'  >
-  <sapn class=' text-gray-400 text-xl flex hover:text-blue-500 cursor-pointer '>
-  <FaLinkedin class='mt-1 fill-blue-500'/>Linkedin
-  </sapn>
-  <span class='p-2'>
-  </span>
-  <sapn class=' text-gray-400 text-xl flex hover:text-red-500 cursor-pointer '>
-  <FaYoutubeSquare class='mt-1 fill-red-500'/>Youtube
-  </sapn>
-  <span class='p-2'>
-  </span>
-  <sapn class=' text-gray-400 text-xl flex hover:text-[#1D9BF9] cursor-pointer  '>
-  <FaTwitter class='mt-1 fill-[#1D9BF9]'/>Twitter
-  </sapn>
-  <span class='p-2'>
-  </span>
-  <sapn class=' text-gray-400 text-xl flex hover:text-white cursor-pointer '>
-  <FaGithub  class='mt-1 fill-white'/>Github
-  </sapn>
-  </div>
+  
   <div class='p-5'></div>
   <div class='m-5 '>
-  <h1 onClick={Blog} class=' text-white text-2xl flex '>
+  <h1 class=' text-white text-2xl flex '>
   <FiEdit  class='mt-1 '/>Blogs
   </h1>
   
