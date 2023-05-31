@@ -61,6 +61,13 @@ function App() {
   <p class='text-gray-400 text-lg flex pl-5'>
   May 22 , 2023 
   </p>
+  <a href='https://dev.to/ninadvyas/nextjs-134new-features-and-performance-boosts-with-17n0'>
+  <h1  class="text-2xl p-4 hover:text-[#1D9BF9] cursor-pointer text-left text-white ">
+  Next.js 13.4:New Features and Performance Boosts with 🚀
+  </h1></a>
+  <p class='text-gray-400 text-lg flex pl-5'>
+  May 31 , 2023 
+  </p>
   </div>
   </div>
   </div>
