@@ -19,24 +19,32 @@ function App() {
   </p>
   </div>
   <div className='div2'  >
+    <a href='https://www.linkedin.com/in/ninad-vyas-b767491a3/'>
   <sapn class=' text-gray-400 text-xl flex hover:text-blue-500 cursor-pointer '>
   <FaLinkedin class='mt-1 fill-blue-500'/>Linkedin
   </sapn>
+  </a>
   <span class='p-2'>
   </span>
+  <a href='https://youtube.com/@ninadvyas07'>
   <sapn class=' text-gray-400 text-xl flex hover:text-red-500 cursor-pointer '>
   <FaYoutubeSquare class='mt-1 fill-red-500'/>Youtube
   </sapn>
+  </a>
   <span class='p-2'>
   </span>
+  <a href='https://twitter.com/NinadVyas87'>
   <sapn class=' text-gray-400 text-xl flex hover:text-[#1D9BF9] cursor-pointer  '>
   <FaTwitter class='mt-1 fill-[#1D9BF9]'/>Twitter
   </sapn>
+  </a>
   <span class='p-2'>
   </span>
+  <a href='https://github.com/NinadVyas'>
   <sapn class=' text-gray-400 text-xl flex hover:text-white cursor-pointer '>
   <FaGithub  class='mt-1 fill-white'/>Github
   </sapn>
+  </a>
   </div>
   <div class='p-5'></div>
   <div class='m-5 '>
@@ -46,11 +54,12 @@ function App() {
   
   </div>
   <div class='leading-6'>
+    <a href='https://dev.to/ninadvyas/exploring-react-routes-4oke'>
   <h1  class="text-2xl p-4 hover:text-[#1D9BF9] cursor-pointer text-left text-white ">
-    🚀How To Start With React JS In 2023
-  </h1>
+   Exploring React Routes 2023 🚀
+  </h1></a>
   <p class='text-gray-400 text-lg flex pl-5'>
-  May 07 , 2023 
+  May 22 , 2023 
   </p>
   </div>
   </div>
