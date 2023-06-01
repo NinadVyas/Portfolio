@@ -1,6 +1,6 @@
 import './Blog.css';
 import { FaLinkedin,FaTwitter,FaGithub,FaYoutubeSquare } from 'react-icons/fa';
-import { FcAbout,FcNext,FcList,FcDocument} from "react-icons/fc";
+import {FcNext} from "react-icons/fc";
 import { FiEdit, } from "react-icons/fi";
 import { NavLink } from 'react-router-dom';
 function Blog() {
