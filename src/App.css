@@ -1,36 +1,19 @@
 .App {
   text-align: center;
-}
-.parentdiv{
-  height: 100vh;
-  width: 100vw;
+  display: flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
 }
+body{
+  display: flexbox;
 
-.div1{
-  width: 50vw;
-  height: 90vh;
-  background-color: rgb(0, 0, 0);
-
-}
-h1{
-  font-family: 'Lexend', sans-serif;
-}
-p{
-  font-family: 'Lexend', sans-serif;
-}
-.div2{
-  display: flex;
-  font-family: 'Lexend', sans-serif;
-  margin-top: 4px;
-  padding-left: 2px;
-}
-.image{
-  border-radius: 50%;
-  width: 150px;
-  float: left;
-  margin-right:35px;
+  @media only screen and (min-width : 768px) {
+    width: 75%;
+    background-color: green;
+  }
+  
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px) {
+    width: 75%;
+    background-color: pink;
+  }
 }
