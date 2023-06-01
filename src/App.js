@@ -10,7 +10,7 @@ function App() {
       <div class='p-10'></div>
       <img  src='https://media.licdn.com/dms/image/D5603AQEUnnUZdBILTw/profile-displayphoto-shrink_800_800/0/1678530059186?e=2147483647&v=beta&t=Ue88nJSLY_rcMhw13P1VRYPln_7qmgRM2dCFwlmWrcU' 
        className="image" />
-       <div class=' sapce-x-2'>
+       <div>
     <h1  class="text-2xl  text-left text-white mr-3">
     Hey I'm Ninad.
   </h1>
@@ -45,6 +45,7 @@ function App() {
   <FaGithub  class='mt-1 fill-white'/>Github
   </sapn>
   </a>
+  
   </div>
   <div class='p-5'></div>
   <div class='m-5 '>
