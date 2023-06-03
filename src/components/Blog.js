@@ -58,7 +58,7 @@ function Blog() {
   <FiEdit  class='mt-1 '/>Blogs
   </h1>
   <h1   class=' text-white text-2xl flex'>
-  <FcNext  class='mt-1 '/><NavLink to="About" class='hover:text-[#1D9BF9]' >About</NavLink>
+  <FcNext  class='mt-1 '/><NavLink to="About" class='hover:text-[#1d8bf9]' >About</NavLink>
   </h1>
   </div>
   <div class='leading-6'>
