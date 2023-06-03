@@ -1,21 +1,17 @@
-.App {
-  text-align: center;
-}
+
 .parentdiv{
-  height: 100vh;
-  width: 100vw;
+  height: auto;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
 }
 
 .div1{
-  width: 50vw;
-  height: 90vh;
-  background-color: rgb(0, 0, 0);
-  display: flexbox;
-
+  max-width: 950px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 7rem;
 }
 h1{
   font-family: 'Lexend', sans-serif;
@@ -26,12 +22,42 @@ p{
 .div2{
   display: flex;
   font-family: 'Lexend', sans-serif;
-  margin-top: 4px;
-  padding-left: 2px;
+  gap: 1rem;
 }
 .image{
+  margin-left: 25px;
   border-radius: 50%;
-  width: 150px;
+  width: 142px;
+  height: 142px;
   float: left;
   margin-right:35px;
+}
+
+.hpdiv1{
+  padding: 1rem;
+}
+@media (max-width: 600px) {
+  .div2{
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+  .hpdiv1{
+    padding-top: 9rem;
+    margin-left: 1rem;
+  }
+
+  .imgage{
+   position: relative;
+   align-items: center;
+   width: 150px;
+  }
+  .hpdiv p{
+    
+   font-size: x-large;
+  }
+  .imgdiv{
+   margin-left: 100px;
+   margin-bottom: 25px;
+  }
 }
