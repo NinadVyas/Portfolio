@@ -62,12 +62,12 @@ function Blog() {
   </h1>
   </div>
   <div class='leading-6'>
-    <a href='https://dev.to/ninadvyas/exploring-react-routes-4oke'>
+  <a href='https://dev.to/ninadvyas/firebase-google-auth-firestore-in-react-js-10j'>
   <h1  class="text-2xl p-4 hover:text-[#1D9BF9] cursor-pointer text-left text-white ">
-   Exploring React Routes 2023 🚀
+  Firebase Google Auth & Firestore In React JS 🚀
   </h1></a>
   <p class='text-gray-400 text-lg flex pl-5'>
-  May 22 , 2023 
+  Jun 05 , 2023 
   </p>
   <a href='https://dev.to/ninadvyas/nextjs-134new-features-and-performance-boosts-with-17n0'>
   <h1  class="text-2xl p-4 hover:text-[#1D9BF9] cursor-pointer text-left text-white ">
@@ -76,6 +76,15 @@ function Blog() {
   <p class='text-gray-400 text-lg flex pl-5'>
   May 31 , 2023 
   </p>
+    <a href='https://dev.to/ninadvyas/exploring-react-routes-4oke'>
+  <h1  class="text-2xl p-4 hover:text-[#1D9BF9] cursor-pointer text-left text-white ">
+   Exploring React Routes 2023 🚀
+  </h1></a>
+  <p class='text-gray-400 text-lg flex pl-5'>
+  May 22 , 2023 
+  </p>
+
+  
   </div>
   </Container>
   </div>
