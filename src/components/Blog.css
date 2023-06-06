@@ -19,6 +19,17 @@ h1{
 p{
   font-family: 'Lexend', sans-serif;
 }
+.navstyle{
+  margin: 15px;
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 2rem;
+}
+.navstyletop{
+  margin: 15px;
+  display: flex;
+  gap: 0.5rem;
+}
 .div2{
   display: flex;
   font-family: 'Lexend', sans-serif;
@@ -59,5 +70,11 @@ p{
   .imgdiv{
    margin-left: 100px;
    margin-bottom: 25px;
+  }
+  .navstyle{
+    margin: 15px;
+    display: flex;
+
+    font-size: x-small;
   }
 }

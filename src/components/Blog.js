@@ -1,8 +1,7 @@
 import { Container } from 'react-bootstrap';
 import './Blog.css';
-import { FaLinkedin,FaTwitter,FaGithub,FaYoutubeSquare } from 'react-icons/fa';
+import { FaLinkedin,FaTwitter,FaGithub,FaYoutubeSquare, FaBookmark} from 'react-icons/fa';
 import {FcNext} from "react-icons/fc";
-import { FiEdit, } from "react-icons/fi";
 import { NavLink } from 'react-router-dom';
 function Blog() {
   return (
@@ -53,10 +52,7 @@ function Blog() {
   </div>
   </p>
   <div class='p-5'></div>
-  <div class='m-5 flex gap-2'>
-  <h1  class=' text-white text-2xl flex'>
-  <FiEdit  class='mt-1 '/>Recent
-  </h1>
+  <div className='navstyletop'>
   <h1   class=' text-white text-2xl flex'>
   <FcNext  class='mt-1 '/><NavLink to="About" class='hover:text-[#1d8bf9]' >About</NavLink>
   </h1>
@@ -66,6 +62,12 @@ function Blog() {
   <h1   class=' text-white text-2xl flex'>
   <FcNext  class='mt-1 '/><NavLink to="Project" class='hover:text-[#1d8bf9]' >Project</NavLink>
   </h1>
+  </div>
+  <div className='navstyle'>
+  <h1  class=' text-white text-3xl flex'>
+  <FaBookmark  class='mt-1 '/>Recent Posts!
+  </h1>
+  
   </div>
   <div class='leading-6'>
   <a href='https://dev.to/ninadvyas/firebase-google-auth-firestore-in-react-js-10j'>
