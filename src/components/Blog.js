@@ -53,12 +53,18 @@ function Blog() {
   </div>
   </p>
   <div class='p-5'></div>
-  <div class='m-5 flex gap-32'>
+  <div class='m-5 flex gap-2'>
   <h1  class=' text-white text-2xl flex'>
-  <FiEdit  class='mt-1 '/>Blogs
+  <FiEdit  class='mt-1 '/>Recent
   </h1>
   <h1   class=' text-white text-2xl flex'>
   <FcNext  class='mt-1 '/><NavLink to="About" class='hover:text-[#1d8bf9]' >About</NavLink>
+  </h1>
+  <h1   class=' text-white text-2xl flex'>
+  <FcNext  class='mt-1 '/><NavLink to="Viewblog" class='hover:text-[#1d8bf9]' >Blogs</NavLink>
+  </h1>
+  <h1   class=' text-white text-2xl flex'>
+  <FcNext  class='mt-1 '/><NavLink to="Project" class='hover:text-[#1d8bf9]' >Project</NavLink>
   </h1>
   </div>
   <div class='leading-6'>

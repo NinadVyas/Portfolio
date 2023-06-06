@@ -1,0 +1,39 @@
+
+.parentdiv22{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .div122{
+    max-width: 950px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 7rem;
+
+  }
+  
+  h1{
+    font-family: 'Lexend', sans-serif;
+  }
+  p{
+    font-family: 'Lexend', sans-serif;
+  }
+  
+  .div2{
+    display: flex;
+    font-family: 'Lexend', sans-serif;
+    gap: 1rem;
+  }
+  
+  @media (max-width: 600px) {
+    .div2{
+      background-color: rgb(0, 0, 0);
+      flex-direction: column;
+      margin-left: 2rem;
+    }
+
+  }
+  

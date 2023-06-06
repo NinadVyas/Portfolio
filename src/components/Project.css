@@ -1,0 +1,24 @@
+
+  
+  .parentdiv11{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .div111{
+   max-width: 950px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 7rem;
+  }
+  h1{
+    font-family: 'Lexend', sans-serif;
+  }
+  p{
+    font-family: 'Lexend', sans-serif;
+  }
+ 
+ 
