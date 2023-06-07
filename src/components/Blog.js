@@ -30,28 +30,31 @@ function Blog() {
             </p>
           </div>
           <div className="div2">
-            <a href="https://www.linkedin.com/in/ninad-vyas-b767491a3/">
+            <a
+              href="https://www.linkedin.com/in/ninad-vyas-b767491a3/"
+              target="_blank"
+            >
               <sapn class=" text-gray-400 text-lg flex hover:text-blue-500 cursor-pointer ">
                 <FaLinkedin class="mt-1 fill-blue-500 mr-1" />
                 Linkedin
               </sapn>
             </a>
 
-            <a href="https://youtube.com/@ninadvyas07">
+            <a href="https://youtube.com/@ninadvyas07" target="_blank">
               <sapn class=" text-gray-400 text-lg flex hover:text-red-500 cursor-pointer ">
                 <FaYoutubeSquare class="mt-1 fill-red-500 mr-1" />
                 Youtube
               </sapn>
             </a>
 
-            <a href="https://twitter.com/NinadVyas87">
+            <a href="https://twitter.com/NinadVyas87" target="_blank">
               <sapn class=" text-gray-400 text-lg flex hover:text-[#1D9BF9] cursor-pointer  ">
                 <FaTwitter class="mt-1 fill-[#1D9BF9] mr-1" />
                 Twitter
               </sapn>
             </a>
 
-            <a href="https://github.com/NinadVyas">
+            <a href="https://github.com/NinadVyas" target="_blank">
               <sapn class=" text-gray-400 text-lg flex hover:text-white cursor-pointer ">
                 <FaGithub class="mt-1 fill-white mr-1" />
                 Github
@@ -76,7 +79,7 @@ function Blog() {
           <h1 class=" text-white text-2xl flex">
             <FcNext class="mt-1 " />
             <NavLink to="Project" class="hover:text-[#1d8bf9]">
-              Project
+              Projects
             </NavLink>
           </h1>
         </div>
@@ -89,33 +92,28 @@ function Blog() {
         <div class="leading-6">
           <h1 class="text-2xl p-4 text-left text-white ">
             <a
-              href="https://dev.to/ninadvyas/exploring-react-routes-4oke"
+              href="https://dev.to/ninadvyas/the-top-programming-tools-for-2023-boost-your-development-efficiency-cni"
               class=" hover:text-[#1D9BF9] cursor-pointer"
+              target="_blank"
             >
+              The Best Development Tools In 2023 🚀{" "}
+            </a>
+          </h1>
+          <p class="text-gray-400 text-lg flex pl-5">Jun 07 , 2023</p>
+          <a href="https://dev.to/ninadvyas/firebase-google-auth-firestore-in-react-js-10j"               target="_blank"
+>
+            <h1 class="text-2xl p-4 hover:text-[#1D9BF9] cursor-pointer text-left text-white ">
               Firebase Google Auth & Firestore In React JS 🚀
-            </a>
-          </h1>
-
+            </h1>
+          </a>
           <p class="text-gray-400 text-lg flex pl-5">Jun 05 , 2023</p>
-          <h1 class="text-2xl p-4 text-left text-white ">
-            <a
-              href="https://dev.to/ninadvyas/exploring-react-routes-4oke"
-              class=" hover:text-[#1D9BF9] cursor-pointer"
-            >
+          <a href="https://dev.to/ninadvyas/nextjs-134new-features-and-performance-boosts-with-17n0"               target="_blank"
+>
+            <h1 class="text-2xl p-4 hover:text-[#1D9BF9] cursor-pointer text-left text-white ">
               Next.js 13.4:New Features and Performance Boosts 🚀
-            </a>
-          </h1>
-
+            </h1>
+          </a>
           <p class="text-gray-400 text-lg flex pl-5">May 31 , 2023</p>
-          <h1 class="text-2xl p-4 text-left text-white ">
-            <a
-              href="https://dev.to/ninadvyas/exploring-react-routes-4oke"
-              class=" hover:text-[#1D9BF9] cursor-pointer"
-            >
-              Exploring React Routes 2023 🚀{" "}
-            </a>
-          </h1>
-          <p class="text-gray-400 text-lg flex pl-5">May 22 , 2023</p>
 
           <NavLink
             to="Viewblog"
