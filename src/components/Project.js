@@ -1,29 +1,27 @@
-import "./Project.css";
-import { Container } from "react-bootstrap";
+import ChevronRightIcon from '@heroicons/react/24/outline/ChevronRightIcon';
 import Projectlist from './Projectlist';
-import {FcNext} from "react-icons/fc";
 
-function Project() {
+const Page = () => {
   return (
-    <div className="parentdiv11">
-      <Container className="div111">
-        
-        <div>
-            <h1 class="text-2xl  text-left text-white mr-3">
-            Some projects that I’ve built
-            </h1>
-        </div>
-        <div class='text-white'>
+    <div className="max-w-2xl	mx-auto pt-12 md:pt-32 px-8 pb-8">
+      <h1 className="text-3xl mb-4 tracking-tight text-white">Some projects that I’ve built</h1>
+      <div>
+         <Projectlist
+          title="RoomRealm"
+          description="A chat room where everybody can talk about anything!"
+          logo="/assets/projects/rr.png"
+          link="https://github.com/NinadVyas/Roomrealm"
+        />
         <Projectlist
           title="College Space"
-          description="The docs and projects provider platform"
-          logo="hello"
+          description="A platform that provides docs and projects to learn"
+          logo="/assets/projects/doc.png"
           link="https://github.com/NinadVyas/Collage-Space"
         />
          <Projectlist
           title="Quiz Web"
           description="A Web App in which user can take quiz and see result instantly"
-          logo="/assets/projects/firstisrael.jpg"
+          logo="/assets/projects/quiz.png"
           link="https://github.com/NinadVyas/quizweb"
         />
         <a
@@ -31,16 +29,38 @@ function Project() {
           target="_blank"
           rel="noopener noreferrer"
           className="
-          inline-flex items-center mt-2 px-2 py-1.5 text-sm font-medium rounded-md transition-colors 
-          duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-400"
+          inline-flex items-center mt-2 px-2 py-1.5 text-sm font-medium rounded-md 
+          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500"
         >
           View more on GitHub
-        <FcNext class=' fill-blue-600'/>
-         </a>
+          <ChevronRightIcon className="inline w-4 h-4 ml-1" strokeWidth={2} />
+        </a>
       </div>
-      </Container>
+      <h1 className="text-3xl mb-4 mt-7 tracking-tight text-white">Skills</h1>
+      <div className="flex flex-wrap">
+        {[
+          'JavaScript',
+          'React.js',
+          'React Native',
+          'Next.js',
+          'Bootstarp',
+          'HTML',
+          'CSS',
+          'PHP',
+          'Python',
+          'JAVA',
+          'Git',
+          'UI Design',
+          'Figma',
+          'Canva'
+        ].map((skill) => (
+          <div key={skill} className="px-4 py-2 rounded-lg text-sm font-semibold border text-white border-gray-3 mr-2 mb-2">
+            {skill}
+          </div>
+        ))}
+      </div>
     </div>
   );
-}
+};
 
-export default Project
+export default Page;
