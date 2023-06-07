@@ -1,5 +1,5 @@
 import ArrowUpRightIcon from "@heroicons/react/24/outline/ArrowUpRightIcon";
-import {FaCode} from "react-icons/fa";
+import {FaForward} from "react-icons/fa";
 
 const Projectlist = ({
   title,
@@ -17,7 +17,7 @@ const Projectlist = ({
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaCode
+        <FaForward
           class="rounded-lg w-6"
           src={logo}
           alt={`${title} Logo`}
@@ -25,7 +25,7 @@ const Projectlist = ({
           height={28}
         />
         <div class="flex-1 pl-4">
-          <span class="text-sm font-medium flex items-center">
+          <span class="text-sm font-medium flex items-center text-blue-500">
             {titleFormatted}
 
             <ArrowUpRightIcon

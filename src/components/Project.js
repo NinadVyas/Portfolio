@@ -16,8 +16,8 @@ function Project() {
         <div class='text-white'>
         <Projectlist
           title="College Space"
-          description="The docs and projects available platform"
-          logo=""
+          description="The docs and projects provider platform"
+          logo="hello"
           link="https://github.com/NinadVyas/Collage-Space"
         />
          <Projectlist
