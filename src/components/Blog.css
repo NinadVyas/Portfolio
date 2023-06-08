@@ -64,8 +64,10 @@ p{
     background-color: rgb(12, 15, 17);
   }
   .div2{
-    flex-direction: column;
+
     margin-left: 2rem;
+    flex-wrap: wrap;
+    
   }
   .hpdiv1{
     padding-top: 9rem;

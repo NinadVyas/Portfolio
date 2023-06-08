@@ -7,6 +7,7 @@ import {
   FaGithub,
   FaYoutubeSquare,
 } from "react-icons/fa";
+import { FiArrowUpRight } from "react-icons/fi";
 import { FiChevronRight } from "react-icons/fi";
 import { FcNext } from "react-icons/fc";
 import { NavLink } from "react-router-dom";
@@ -35,12 +36,16 @@ function Blog() {
             </p>
           </div>
           <div className="div2">
+
             <a
               href="https://www.linkedin.com/in/ninad-vyas-b767491a3/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <sapn class=" text-gray-400 text-lg flex hover:text-blue-500 cursor-pointer ">
+              <sapn
+                class=" text-gray-400 text-lg flex hover:text-blue-500 cursor-pointer 
+             "
+              >
                 <FaLinkedin class="mt-1 fill-blue-500 mr-1" />
                 Linkedin
               </sapn>
@@ -51,7 +56,10 @@ function Blog() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <sapn class=" text-gray-400 text-lg flex hover:text-red-500 cursor-pointer ">
+              <sapn
+                class=" text-gray-400 text-lg flex hover:text-red-500 cursor-pointer 
+               min-[320px]: max-[600px]:ml-11"
+              >
                 <FaYoutubeSquare class="mt-1 fill-red-500 mr-1" />
                 Youtube
               </sapn>
@@ -62,7 +70,10 @@ function Blog() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <sapn class=" text-gray-400 text-lg flex hover:text-[#1D9BF9] cursor-pointer  ">
+              <sapn
+                class=" text-gray-400 text-lg flex hover:text-[#1D9BF9] cursor-pointer  
+              min-[320px]: max-[600px]:mr-14 pr-0.5"
+              >
                 <FaTwitter class="mt-1 fill-[#1D9BF9] mr-1" />
                 Twitter
               </sapn>
@@ -73,34 +84,16 @@ function Blog() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <sapn class=" text-gray-400 text-lg flex hover:text-white cursor-pointer ">
+              <sapn class=" text-gray-400 text-lg flex hover:text-white cursor-pointer">
                 <FaGithub class="mt-1 fill-white mr-1" />
                 Github
               </sapn>
             </a>
+
           </div>
         </p>
-        <div class="p-5"></div>
-        <div className="navstyletop">
-          <h1 class=" text-white text-2xl flex font-semibold">
-            <FcNext class="mt-1 " />
-            <NavLink to="About" class="">
-              About
-            </NavLink>
-          </h1>
-          <h1 class=" text-white text-2xl flex font-semibold">
-            <FcNext class="mt-1 " />
-            <NavLink to="Viewblog" class="hover:text-[#1d8bf9]">
-              Blogs
-            </NavLink>
-          </h1>
-          <h1 class=" text-white text-2xl flex font-semibold">
-            <FcNext class="mt-1 " />
-            <NavLink to="Project" class="hover:text-[#1d8bf9]">
-              Projects
-            </NavLink>
-          </h1>
-        </div>
+        <div class="p-2"></div>
+        
         <div class="flex ml-3 mt-5">
           <a href="mailto:ninadvyas07@gmail.com">
             <div class="flex">
@@ -138,7 +131,7 @@ function Blog() {
               />
               <h1 class=" flex text-2xl text-green-600 hover:underline mt-0.5">
                 {" "}
-                Let's have 15min chat!
+                Let's have 15min chat<FiArrowUpRight/>
               </h1>
             </div>
           </a>
@@ -147,41 +140,59 @@ function Blog() {
         <div className="navstyle"></div>
         <div class="leading-6">
           <p class="text-xl text-left text-gray-400 mt-2 ml-4">
-            I am a 19 year old full-stack developer with a passion for building
-            things that are user-friendly design and innovative.
+            Hello Folks! Coding's complexities fascinate me, offering endless innovative possibilities for creating
+            software development.
+            <NavLink
+              to="About"
+              className="
+          inline-flex items-center mt-2 py-1.5 text-lg font-medium rounded-md 
+          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500
+          min-[320px]: max-[600px]:mr-64 pr-0.5 hover:underline"
+            >
+              About
+              <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
+            </NavLink>
+          </p>
+          <p class="text-xl text-left text-gray-400 mt-2 ml-4">
+            I'm software developer & designer with a passion for building things
+            that are user-friendly , innovative and problem
+            solving.
             <NavLink
               to="Project"
               className="
-          inline-flex items-center mt-2 px-2 py-1.5 text-sm font-medium rounded-md 
-          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500"
+          inline-flex items-center mt-2 py-1.5 text-lg font-medium rounded-md 
+          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500
+          min-[320px]: max-[600px]:mr-64 pr-0.5 hover:underline"
             >
-              My Projects
+              Projects
               <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
             </NavLink>
-            </p>
-            <p class="text-xl text-left text-gray-400 mt-2 ml-4">
-
-            I write articles and engaging blog posts about tech&lifestyle.
+          </p>
+          <p class="text-xl text-left text-gray-400 mt-2 ml-4">
+            I write articles and engaging blog posts about tech &
+            lifestyle.
             <NavLink
               to="Viewblog"
               className="
-          inline-flex items-center mt-2 px-2 py-1.5 text-sm font-medium rounded-md 
-          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500"
+          inline-flex items-center mt-2 py-1.5 text-lg font-medium rounded-md 
+          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500
+          min-[320px]: max-[600px]:mr-64 pr-0.5 hover:underline"
             >
-              My Blogs
+              Blogs
               <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
             </NavLink>
-            </p>
-            <p class="text-xl text-left text-gray-400 mt-2 ml-4">
+          </p>
+          <p class="text-xl text-left text-gray-400 mt-2 ml-4">
             When I'm not immersed in code or writing, you can find me behind the
             lens, capturing moments through my photography.
             <NavLink
               to="Photo"
               className="
-          inline-flex items-center mt-2 px-2 py-1.5 text-sm font-medium rounded-md 
-          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500"
+          inline-flex items-center mt-2 py-1.5 text-lg font-medium rounded-md 
+          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500
+          min-[320px]: max-[600px]:mr-64 pr-0.5 hover:underline"
             >
-              My Frames
+              Frames
               <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
             </NavLink>
           </p>

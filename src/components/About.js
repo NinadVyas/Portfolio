@@ -23,24 +23,24 @@ function About() {
           </p>
           <p class="text-xl text-left text-gray-400 mt-5">
             If you want to get in touch, I'm most responsive over{" "}
-            <a class="text-blue-600" href="mailto:ninadvyas07@gmail.com">
+            <a class="text-blue-600 hover:underline" href="mailto:ninadvyas07@gmail.com">
               Email
             </a>{" "}
             and I tend to be pretty active on{" "}
-            <a class="text-blue-600" href="https://twitter.com/NinadVyas87">
+            <a class="text-blue-600 hover:underline" href="https://twitter.com/NinadVyas87">
               Twitter
             </a>{" "}
             as well.
           </p>
           <p class="text-xl text-left text-gray-400 mt-5">
             In my meantime I Play some{" "}
-            <a class="text-blue-600" href="https://www.chess.com/member/ninadv_07">
+            <a class="text-blue-600 hover:underline" href="https://www.chess.com/member/ninadv_07">
               Chess
               
             </a>{" "}
             & Like to capture some amazing {" "}
             
-            <a class="text-blue-600" href="https://500px.com/p/ninadvyas">
+            <a class="text-blue-600 hover:underline" href="https://500px.com/p/ninadvyas">
               Frames
             </a>{" "}
             of life.

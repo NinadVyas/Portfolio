@@ -46,23 +46,17 @@ function Photo() {
             </Card>
             <Card style={{ width: "24rem", height: "17rem",border: "2px solid white", objectFit:"cover",borderRadius:"6%",}}>
               <CardImg
-                src={require("../components/assets/photos/0.jpeg")}
-                style={{ width: "24rem", height: "268px",borderRadius:"5%", }}
-              />
-            </Card>
-            <Card style={{ width: "24rem", height: "17rem",border: "2px solid white", objectFit:"cover",borderRadius:"6%",}}>
-              <CardImg
                 src={require("../components/assets/photos/6.jpeg")}
                 style={{ width: "24rem", height: "268px",borderRadius:"5%", }}
               />
             </Card>
-            <Card style={{ width: "24rem", height: "17rem",border: "2px solid white", objectFit:"cover",borderRadius:"5%",}}>
+            <Card style={{ width: "24rem", height: "17rem",border: "2px solid white", objectFit:"cover",borderRadius:"6%",}}>
               <CardImg
                 src={require("../components/assets/photos/7.jpeg")}
                 style={{ width: "24rem", height: "268px",borderRadius:"5%", }}
               />
             </Card>
-            <Card style={{ width: "24rem", height: "17rem",border: "2px solid white", objectFit:"cover",borderRadius:"6%",}}>
+            <Card style={{ width: "24rem", height: "17rem",border: "2px solid white", objectFit:"cover",borderRadius:"5%",}}>
               <CardImg
                 src={require("../components/assets/photos/8.jpeg")}
                 style={{ width: "24rem", height: "268px",borderRadius:"5%", }}
@@ -80,13 +74,13 @@ function Photo() {
                 style={{ width: "24rem", height: "268px",borderRadius:"5%", }}
               />
             </Card>
-            <Card style={{ width: "24rem", height: "17rem",border: "2px solid white", objectFit:"cover",borderRadius:"5%",}}>
+            <Card style={{ width: "24rem", height: "17rem",border: "2px solid white", objectFit:"cover",borderRadius:"6%",}}>
               <CardImg
                 src={require("../components/assets/photos/11.jpeg")}
                 style={{ width: "24rem", height: "268px",borderRadius:"5%", }}
               />
             </Card>
-            <Card style={{ width: "24rem", height: "17rem",border: "2px solid white", objectFit:"cover",borderRadius:"6%",}}>
+            <Card style={{ width: "24rem", height: "17rem",border: "2px solid white", objectFit:"cover",borderRadius:"5%",}}>
               <CardImg
                 src={require("../components/assets/photos/12.jpeg")}
                 style={{ width: "24rem", height: "268px",borderRadius:"5%", }}
