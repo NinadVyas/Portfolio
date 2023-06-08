@@ -3,50 +3,5 @@
   display: flex;
 }
 body{
-  background-color: black;
+  background-color: rgb(12, 15, 17);
 }
-@media only screen and (min-width: 768px) {
-  section.dashboard .slick-list .slick-track {
-    display: flex;
-  }
-  section.dashboard .slick-list .slide {
-    opacity: 1;
-  }
-  header div.wrapper div.article h1 span.arrow {
-    display:none;
-  }
-
-  header div.wrapper div.article div.description {
-    max-height: 300px
-  }
-} 
-
-@media only screen and (min-width: 1024px) {
-
-  div.container header div.wrapper {
-    /* height: 200px; */
-    text-align:left;
-    margin-left:5%;
-    width:480px;
-
-  }
-
-  header div.wrapper div.article footer {
-    display: block;
-  }
-
-  section.dashboard .slick-list .slick-track {
-    display: flex;
-    min-width: 309px;
-    padding: 20px;
-  }
-  
-  section.dashboard .slick-list .slick-track[index="2"] {
-    display: flex;
-  }
-
-  section.dashboard .slick-list .slide {
-    opacity: 1;
-  }
-
-} 

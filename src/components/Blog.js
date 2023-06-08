@@ -1,16 +1,21 @@
-import { Container } from "react-bootstrap";
+import { Container} from "react-bootstrap";
+import Lottie,{LottieRefCurrentProps} from "lottie-react";
 import "./Blog.css";
 import {
   FaLinkedin,
   FaTwitter,
   FaGithub,
   FaYoutubeSquare,
-  FaBookmark,
+
 } from "react-icons/fa";
 import { FiChevronRight } from "react-icons/fi";
 import { FcNext } from "react-icons/fc";
 import { NavLink } from "react-router-dom";
+import Mail from "./assets/mail1.json";
+import { useRef } from "react";
+
 function Blog() {
+  const mailref = useRef<LottieRefCurrentProps>(null)
   return (
     <div className="parentdiv">
       <Container className="div1">
@@ -26,13 +31,14 @@ function Blog() {
             <h1 class="text-2xl  text-left text-white mr-3">Hey I'm Ninad.</h1>
 
             <p class="text-2xl text-left text-gray-400 ">
-              I'm a passionate web developer.
+              I'm a passionate software engineer.
             </p>
           </div>
           <div className="div2">
             <a
               href="https://www.linkedin.com/in/ninad-vyas-b767491a3/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <sapn class=" text-gray-400 text-lg flex hover:text-blue-500 cursor-pointer ">
                 <FaLinkedin class="mt-1 fill-blue-500 mr-1" />
@@ -40,21 +46,33 @@ function Blog() {
               </sapn>
             </a>
 
-            <a href="https://youtube.com/@ninadvyas07" target="_blank">
+            <a
+              href="https://youtube.com/@ninadvyas07"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <sapn class=" text-gray-400 text-lg flex hover:text-red-500 cursor-pointer ">
                 <FaYoutubeSquare class="mt-1 fill-red-500 mr-1" />
                 Youtube
               </sapn>
             </a>
 
-            <a href="https://twitter.com/NinadVyas87" target="_blank">
+            <a
+              href="https://twitter.com/NinadVyas87"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <sapn class=" text-gray-400 text-lg flex hover:text-[#1D9BF9] cursor-pointer  ">
                 <FaTwitter class="mt-1 fill-[#1D9BF9] mr-1" />
                 Twitter
               </sapn>
             </a>
 
-            <a href="https://github.com/NinadVyas" target="_blank">
+            <a
+              href="https://github.com/NinadVyas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <sapn class=" text-gray-400 text-lg flex hover:text-white cursor-pointer ">
                 <FaGithub class="mt-1 fill-white mr-1" />
                 Github
@@ -64,30 +82,46 @@ function Blog() {
         </p>
         <div class="p-5"></div>
         <div className="navstyletop">
-          <h1 class=" text-white text-2xl flex">
+          <h1 class=" text-white text-2xl flex font-semibold">
             <FcNext class="mt-1 " />
-            <NavLink to="About" class="hover:text-[#1d8bf9]">
+            <NavLink to="About" class="">
               About
             </NavLink>
           </h1>
-          <h1 class=" text-white text-2xl flex">
+          <h1 class=" text-white text-2xl flex font-semibold">
             <FcNext class="mt-1 " />
             <NavLink to="Viewblog" class="hover:text-[#1d8bf9]">
               Blogs
             </NavLink>
           </h1>
-          <h1 class=" text-white text-2xl flex">
+          <h1 class=" text-white text-2xl flex font-semibold">
             <FcNext class="mt-1 " />
             <NavLink to="Project" class="hover:text-[#1d8bf9]">
               Projects
             </NavLink>
           </h1>
         </div>
+        <div class="flex ml-3 mt-5">          
+        <a href="mailto:ninadvyas07@gmail.com">
+          <div class='flex'>
+          <Lottie onComplete={() => {
+             mailref.current?.goToAndPlay(48,true)
+          }} lottieRef={mailref} loop={false} class=" w-10" animationData={Mail} />
+          <h1 class=" flex text-2xl text-blue-500 hover:underline mt-2">
+            {" "}
+            Let's Connect! 
+          </h1>
+          </div>
+          </a>
+        </div>
+       
         <div className="navstyle">
           <h1 class=" text-white text-2xl flex">
-            <FaBookmark class="mt-1 " />
+            <FcNext class="mt-1" /><FcNext class="mt-1" />
+
             Recent Posts!
           </h1>
+           
         </div>
         <div class="leading-6">
           <h1 class="text-2xl p-4 text-left text-white ">
@@ -95,20 +129,27 @@ function Blog() {
               href="https://dev.to/ninadvyas/the-top-programming-tools-for-2023-boost-your-development-efficiency-cni"
               class=" hover:text-[#1D9BF9] cursor-pointer"
               target="_blank"
+              rel="noopener noreferrer"
             >
               The Best Development Tools In 2023 🚀{" "}
             </a>
           </h1>
           <p class="text-gray-400 text-lg flex pl-5">Jun 07 , 2023</p>
-          <a href="https://dev.to/ninadvyas/firebase-google-auth-firestore-in-react-js-10j"               target="_blank"
->
+          <a
+            href="https://dev.to/ninadvyas/firebase-google-auth-firestore-in-react-js-10j"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <h1 class="text-2xl p-4 hover:text-[#1D9BF9] cursor-pointer text-left text-white ">
               Firebase Google Auth & Firestore In React JS 🚀
             </h1>
           </a>
           <p class="text-gray-400 text-lg flex pl-5">Jun 05 , 2023</p>
-          <a href="https://dev.to/ninadvyas/nextjs-134new-features-and-performance-boosts-with-17n0"               target="_blank"
->
+          <a
+            href="https://dev.to/ninadvyas/nextjs-134new-features-and-performance-boosts-with-17n0"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <h1 class="text-2xl p-4 hover:text-[#1D9BF9] cursor-pointer text-left text-white ">
               Next.js 13.4:New Features and Performance Boosts 🚀
             </h1>

@@ -41,7 +41,6 @@ const Page = () => {
         {[
           'JavaScript',
           'React.js',
-          'React Native',
           'Next.js',
           'Bootstarp',
           'HTML',
@@ -49,6 +48,8 @@ const Page = () => {
           'PHP',
           'Python',
           'JAVA',
+          'Android',
+          'React Native',
           'Git',
           'UI Design',
           'Figma',
