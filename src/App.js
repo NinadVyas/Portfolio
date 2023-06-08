@@ -5,6 +5,7 @@ import About from './components/About';
 import Viewblog from './components/Viewblog';
 import Project from './components/Project';
 import Projectlist from './components/Projectlist';
+import Photo from './components/Photo'
 
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
         <Route path='Viewblog' element={<Viewblog/>} />
         <Route path='Project' element={<Project/>} />
         <Route path='Projectlist' element={<Projectlist/>} />
+        <Route path='Photo' element={<Photo/>} />
+
       </Routes>
       </BrowserRouter>
     )

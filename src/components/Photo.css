@@ -1,0 +1,40 @@
+
+  
+  .parentdiv13{
+    width: auto;
+    height: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .div113{
+   padding: 0 1em;
+   max-width: 75rem;
+   max-height: auto;
+   margin: 0 auto;
+   align-items: center;
+   height: auto;
+   
+  }
+  h1{
+    font-family: 'Lexend', sans-serif;
+  }
+  p{
+    font-family: 'Lexend', sans-serif;
+  }
+ 
+ 
+
+@media (max-width: 600px) {
+    .parentdiv13{
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left: 25px;
+      }
+  }
+  

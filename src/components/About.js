@@ -31,6 +31,17 @@ function About() {
             </a>{" "}
             as well.
           </p>
+          <p class="text-xl text-left text-gray-400 mt-5">
+            In my meantime I Play some{" "}
+            <a class="text-blue-600" href="https://www.chess.com/member/ninadv_07">
+              Chess
+            </a>{" "}
+            & Like to capture some amazing {" "}
+            <a class="text-blue-600" href="Photo">
+              Frames
+            </a>{" "}
+            of life.
+          </p>
         </div>
       </Container>
     </div>
