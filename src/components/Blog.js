@@ -1,21 +1,21 @@
-import { Container} from "react-bootstrap";
-import Lottie,{LottieRefCurrentProps} from "lottie-react";
+import { Container } from "react-bootstrap";
+import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import "./Blog.css";
 import {
   FaLinkedin,
   FaTwitter,
   FaGithub,
   FaYoutubeSquare,
-
 } from "react-icons/fa";
 import { FiChevronRight } from "react-icons/fi";
 import { FcNext } from "react-icons/fc";
 import { NavLink } from "react-router-dom";
 import Mail from "./assets/mail1.json";
+import Mic from "./assets/mic2.json";
 import { useRef } from "react";
 
 function Blog() {
-  const mailref = useRef<LottieRefCurrentProps>(null)
+  const mailref = useRef < LottieRefCurrentProps > null;
   return (
     <div className="parentdiv">
       <Container className="div1">
@@ -101,70 +101,90 @@ function Blog() {
             </NavLink>
           </h1>
         </div>
-        <div class="flex ml-3 mt-5">          
-        <a href="mailto:ninadvyas07@gmail.com">
-          <div class='flex'>
-          <Lottie onComplete={() => {
-             mailref.current?.goToAndPlay(48,true)
-          }} lottieRef={mailref} loop={false} class=" w-10" animationData={Mail} />
-          <h1 class=" flex text-2xl text-blue-500 hover:underline mt-2">
-            {" "}
-            Let's Connect! 
-          </h1>
-          </div>
+        <div class="flex ml-3 mt-5">
+          <a href="mailto:ninadvyas07@gmail.com">
+            <div class="flex">
+              <Lottie
+                onComplete={() => {
+                  mailref.current?.goToAndPlay(48, true);
+                }}
+                lottieRef={mailref}
+                loop={false}
+                class=" w-10"
+                animationData={Mail}
+              />
+              <h1 class=" flex text-2xl text-blue-500 hover:underline mt-2">
+                {" "}
+                Reach out!
+              </h1>
+            </div>
           </a>
         </div>
-       
-        <div className="navstyle">
-          <h1 class=" text-white text-2xl flex">
-            <FcNext class="mt-1" /><FcNext class="mt-1" />
-
-            Recent Posts!
-          </h1>
-           
+        <div class="flex ml-3 mt-1">
+          <a
+            href="https://cal.com/ninad-vyas"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="flex">
+              <Lottie
+                onComplete={() => {
+                  mailref.current?.goToAndPlay(20, true);
+                }}
+                lottieRef={mailref}
+                loop={false}
+                class=" w-10"
+                animationData={Mic}
+              />
+              <h1 class=" flex text-2xl text-green-600 hover:underline mt-0.5">
+                {" "}
+                Let's have 15min chat!
+              </h1>
+            </div>
+          </a>
         </div>
+
+        <div className="navstyle"></div>
         <div class="leading-6">
-          <h1 class="text-2xl p-4 text-left text-white ">
-            <a
-              href="https://dev.to/ninadvyas/the-top-programming-tools-for-2023-boost-your-development-efficiency-cni"
-              class=" hover:text-[#1D9BF9] cursor-pointer"
-              target="_blank"
-              rel="noopener noreferrer"
+          <p class="text-xl text-left text-gray-400 mt-2 ml-4">
+            I am a 19 year old full-stack developer with a passion for building
+            things that are user-friendly design and innovative.
+            <NavLink
+              to="Project"
+              className="
+          inline-flex items-center mt-2 px-2 py-1.5 text-sm font-medium rounded-md 
+          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500"
             >
-              The Best Development Tools In 2023 🚀{" "}
-            </a>
-          </h1>
-          <p class="text-gray-400 text-lg flex pl-5">Jun 07 , 2023</p>
-          <a
-            href="https://dev.to/ninadvyas/firebase-google-auth-firestore-in-react-js-10j"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <h1 class="text-2xl p-4 hover:text-[#1D9BF9] cursor-pointer text-left text-white ">
-              Firebase Google Auth & Firestore In React JS 🚀
-            </h1>
-          </a>
-          <p class="text-gray-400 text-lg flex pl-5">Jun 05 , 2023</p>
-          <a
-            href="https://dev.to/ninadvyas/nextjs-134new-features-and-performance-boosts-with-17n0"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <h1 class="text-2xl p-4 hover:text-[#1D9BF9] cursor-pointer text-left text-white ">
-              Next.js 13.4:New Features and Performance Boosts 🚀
-            </h1>
-          </a>
-          <p class="text-gray-400 text-lg flex pl-5">May 31 , 2023</p>
+              My Projects
+              <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
+            </NavLink>
+            </p>
+            <p class="text-xl text-left text-gray-400 mt-2 ml-4">
 
-          <NavLink
-            to="Viewblog"
-            rel="noopener noreferrer"
-            className="
-          inline-flex items-center mt-7 px-2 py-1.5 ml-2.5 text-lg h-5 rounded-md hover:bg-[#2f4a69] text-[#4385d7]"
-          >
-            View more Posts
-            <FiChevronRight class=" text-[#4385d7]" />
-          </NavLink>
+            I write articles and engaging blog posts about tech&lifestyle.
+            <NavLink
+              to="Viewblog"
+              className="
+          inline-flex items-center mt-2 px-2 py-1.5 text-sm font-medium rounded-md 
+          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500"
+            >
+              My Blogs
+              <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
+            </NavLink>
+            </p>
+            <p class="text-xl text-left text-gray-400 mt-2 ml-4">
+            When I'm not immersed in code or writing, you can find me behind the
+            lens, capturing moments through my photography.
+            <NavLink
+              to="Photo"
+              className="
+          inline-flex items-center mt-2 px-2 py-1.5 text-sm font-medium rounded-md 
+          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500"
+            >
+              My Frames
+              <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
+            </NavLink>
+          </p>
           <div class="flex ml-5 mt-10">
             <a href="#/">
               <sapn class=" text-gray-300 text-lg flex hover:text-blue-500 cursor-pointer ">

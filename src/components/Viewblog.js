@@ -11,7 +11,6 @@ function Viewblog() {
             Blogs
           </h1>
         </div>
-
         <div class="leading-62">
           <h1 class="text-2xl p-4 text-left text-white ">
             <a
