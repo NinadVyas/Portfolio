@@ -8,10 +8,11 @@
 }
 
 .div1{
-  max-width: 950px;
+  max-width: 650px;
   margin: 0 auto;
   position: relative;
   margin-top: 7rem;
+
 }
 .mailanimate{
   display: flex;

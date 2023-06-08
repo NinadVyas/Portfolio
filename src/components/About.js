@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./About.css";
 import { Container } from "react-bootstrap";
 function About() {
@@ -35,14 +36,17 @@ function About() {
             In my meantime I Play some{" "}
             <a class="text-blue-600" href="https://www.chess.com/member/ninadv_07">
               Chess
+              
             </a>{" "}
             & Like to capture some amazing {" "}
-            <a class="text-blue-600" href="Photo">
+            
+            <a class="text-blue-600" href="https://500px.com/p/ninadvyas">
               Frames
             </a>{" "}
             of life.
           </p>
         </div>
+        
       </Container>
     </div>
   );
