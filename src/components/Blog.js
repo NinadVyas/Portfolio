@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+import React from "react";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import "./Blog.css";
 import {
@@ -9,17 +10,37 @@ import {
 } from "react-icons/fa";
 import { FiArrowUpRight } from "react-icons/fi";
 import { FiChevronRight } from "react-icons/fi";
-import { FcNext } from "react-icons/fc";
 import { NavLink } from "react-router-dom";
 import Mail from "./assets/mail1.json";
 import Mic from "./assets/mic2.json";
 import { useRef } from "react";
 
+import Footer from "./Footer";
+
 function Blog() {
   const mailref = useRef < LottieRefCurrentProps > null;
+  
   return (
     <div className="parentdiv">
       <Container className="div1">
+        {/* Navbar */}
+        {/* <div className="nav12">
+      <h1 class='text-blue-500'>
+          <NavLink to='Project'>Projects</NavLink>  
+        </h1>
+        <span class='text-white'>/</span>
+        <h1 class='text-blue-500'>
+          <NavLink to='About'>About</NavLink>  
+        </h1>
+        <span class='text-white'>/</span>
+        <h1 class='text-blue-500'>
+          <NavLink to='Viewblog'>Blogs</NavLink>  
+        </h1>
+        <span class='text-white'>/</span>
+        <h1 class='text-blue-500'>
+          <NavLink to='Photo'>Frames</NavLink>  
+        </h1>
+        </div> */}
         <div class="imgdiv">
           <img
             alt=""
@@ -135,64 +156,78 @@ function Blog() {
             </div>
           </a>
         </div>
-        <div class='flex gap-3 flex-wrap'>
-        <div class="card-list">
-          <article class="card">
-            <figure class="card-image">
-              <img
-                src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDcwMTUwOQ&ixlib=rb-1.2.1&q=85"
-                alt="An orange painted blue, cut in half laying on a blue background"
-              />
-            </figure>
-          </article>
-        </div>
-        <div class="card-list">
-          <article class="card">
-            <figure class="card-image">
-              <img
-                src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDcwMTUwOQ&ixlib=rb-1.2.1&q=85"
-                alt="An orange painted blue, cut in half laying on a blue background"
-              />
-            </figure>
-          </article>
-        </div>
-        <div class="card-list">
-          <article class="card">
-            <figure class="card-image">
-              <img
-                src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDcwMTUwOQ&ixlib=rb-1.2.1&q=85"
-                alt="An orange painted blue, cut in half laying on a blue background"
-              />
-            </figure>
-          </article>
-        </div>
-        <div class="card-list">
-          <article class="card">
-            <figure class="card-image">
-              <img
-                src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDcwMTUwOQ&ixlib=rb-1.2.1&q=85"
-                alt="An orange painted blue, cut in half laying on a blue background"
-              />
-            </figure>
-          </article>
-        </div>
-        </div>
-        <div className="navstyle"></div>
-        <div class="leading-6">
-          <p class="text-xl text-left text-gray-400 mt-2 ml-4">
-            Hello Folks! Coding's complexities fascinate me, offering endless
-            innovative possibilities for creating software development.
-            <NavLink
-              to="About"
+       <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+   integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+   crossorigin="anonymous"
+  />
+
+
+  {/* cards */}
+  {/* <div className="cardsall">
+<div class="container1">
+   <div class="container__info">
+   <NavLink
+              to="Project"
               className="
           inline-flex items-center mt-2 py-1.5 text-lg font-medium rounded-md 
-          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500
+          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-white
           min-[320px]: max-[600px]:mr-64 pr-0.5 hover:underline"
             >
-              About
+              Projects
               <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
             </NavLink>
-          </p>
+   </div>
+  </div>
+  <div class="container1">
+   <div class="container__info">
+   <NavLink
+              to="Project"
+              className="
+          inline-flex items-center mt-2 py-1.5 text-lg font-medium rounded-md 
+          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-white
+          min-[320px]: max-[600px]:mr-64 pr-0.5 hover:underline"
+            >
+              Projects
+              <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
+            </NavLink>
+   </div>
+  </div>
+  <div class="container1">
+   <div class="container__info">
+   <NavLink
+              to="Project"
+              className="
+          inline-flex items-center mt-2 py-1.5 text-lg font-medium rounded-md 
+          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-white
+          min-[320px]: max-[600px]:mr-64 pr-0.5 hover:underline"
+            >
+              Projects
+              <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
+            </NavLink>
+   </div>
+  </div>
+  <div class="container1">
+   <div class="container__info">
+   <NavLink
+              to="Project"
+              className="
+          inline-flex items-center mt-2 py-1.5 text-lg font-medium rounded-md 
+          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-white
+          min-[320px]: max-[600px]:mr-64 pr-0.5 hover:underline"
+            >
+              Projects
+              <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
+            </NavLink>
+   </div>
+  </div>
+  </div> */}
+
+        <div className="navstyle"></div>
+        <div class="leading-6">
+        
+          
           <p class="text-xl text-left text-gray-400 mt-2 ml-4">
             I'm software developer & designer with a passion for building things
             that are user-friendly , innovative and problem solving.
@@ -207,6 +242,22 @@ function Blog() {
               <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
             </NavLink>
           </p>
+         
+          <p class="text-xl text-left text-gray-400 mt-2 ml-4">
+            Hello Folks! Coding's complexities fascinate me, offering endless
+            innovative possibilities for creating software development.
+            <NavLink
+              to="About"
+              className="
+          inline-flex items-center mt-2 py-1.5 text-lg font-medium rounded-md 
+          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500
+          min-[320px]: max-[600px]:mr-64 pr-0.5 hover:underline"
+            >
+              About
+              <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
+            </NavLink>
+          </p>
+          
           <p class="text-xl text-left text-gray-400 mt-2 ml-4">
             I write articles and engaging blog posts about tech & lifestyle.
             <NavLink
@@ -220,6 +271,7 @@ function Blog() {
               <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
             </NavLink>
           </p>
+         
           <p class="text-xl text-left text-gray-400 mt-2 ml-4">
             When I'm not immersed in code or writing, you can find me behind the
             lens, capturing moments through my photography.
@@ -234,27 +286,7 @@ function Blog() {
               <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
             </NavLink>
           </p>
-          <div class="flex ml-5 mt-10">
-            <a href="#/">
-              <sapn class=" text-gray-300 text-lg flex hover:text-blue-500 cursor-pointer ">
-                @NinadVyas
-              </sapn>
-            </a>
-            <div className="btmbar">
-              <a href="https://www.linkedin.com/in/ninad-vyas-b767491a3/">
-                <FaLinkedin class="mt-0.5 fill-gray-300 mr-1 hover:fill-blue-500" />
-              </a>
-              <a href="https://youtube.com/@ninadvyas07">
-                <FaYoutubeSquare class="mt-0.5 fill-gray-300 mr-1 hover:fill-red-500" />
-              </a>
-              <a href="https://twitter.com/NinadVyas87">
-                <FaTwitter class="mt-0.5 fill-gray-300 mr-1 hover:fill-[#1D9BF9]" />
-              </a>
-              <a href="https://github.com/NinadVyas">
-                <FaGithub class="mt-0.5 fill-gray-300 mr-1 hover:fill-white" />
-              </a>
-            </div>
-          </div>
+         <Footer/>
         </div>
       </Container>
     </div>
