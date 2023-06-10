@@ -1,10 +1,12 @@
 import "./Photo.css";
 import { Container } from "react-bootstrap";
 import { Card, CardImg } from "reactstrap";
+
 function Photo() {
   return (
     <div className="parentdiv13">
       <Container className="div113">
+        
         <div class=' mb-2'>
           <h1 class="text-4xl  text-center text-white mr-3 mb-2 ">Frames📸</h1>
           <div class=" flex flex-wrap gap-2 ">
@@ -94,6 +96,7 @@ function Photo() {
             </Card>
           </div>
         </div>
+
       </Container>
     </div>
   );
