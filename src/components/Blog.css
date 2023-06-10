@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap');
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.card-list {
+	width: 90%;
+	max-width: 319px;
+ margin-top: 1rem;
+ margin-bottom: 1rem;
+}
+
+.card {
+	background-color: #FFF;
+	box-shadow: 0 0 0 1px rgba(#000, .05), 0 20px 50px 0 rgba(#000, .1);
+	border-radius: 15px;
+	overflow: hidden;
+	position: relative;
+	transition: .15s ease-in;
+	
+	&:hover, &:focus-within {
+		box-shadow: 0 0 0 2px #16C79A, 0 10px 60px 0 rgba(#9c2222, .1);
+			transform: translatey(-5px);
+	}
+}
+
+.card-image {
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+
+
+
 
 .parentdiv{
   height: auto;

@@ -36,7 +36,6 @@ function Blog() {
             </p>
           </div>
           <div className="div2">
-
             <a
               href="https://www.linkedin.com/in/ninad-vyas-b767491a3/"
               target="_blank"
@@ -89,11 +88,10 @@ function Blog() {
                 Github
               </sapn>
             </a>
-
           </div>
         </p>
         <div class="p-2"></div>
-        
+
         <div class="flex ml-3 mt-5">
           <a href="mailto:ninadvyas07@gmail.com">
             <div class="flex">
@@ -131,17 +129,59 @@ function Blog() {
               />
               <h1 class=" flex text-2xl text-green-600 hover:underline mt-0.5">
                 {" "}
-                Let's have 15min chat<FiArrowUpRight/>
+                Let's have 15min chat
+                <FiArrowUpRight />
               </h1>
             </div>
           </a>
         </div>
-
+        <div class='flex gap-3 flex-wrap'>
+        <div class="card-list">
+          <article class="card">
+            <figure class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDcwMTUwOQ&ixlib=rb-1.2.1&q=85"
+                alt="An orange painted blue, cut in half laying on a blue background"
+              />
+            </figure>
+          </article>
+        </div>
+        <div class="card-list">
+          <article class="card">
+            <figure class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDcwMTUwOQ&ixlib=rb-1.2.1&q=85"
+                alt="An orange painted blue, cut in half laying on a blue background"
+              />
+            </figure>
+          </article>
+        </div>
+        <div class="card-list">
+          <article class="card">
+            <figure class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDcwMTUwOQ&ixlib=rb-1.2.1&q=85"
+                alt="An orange painted blue, cut in half laying on a blue background"
+              />
+            </figure>
+          </article>
+        </div>
+        <div class="card-list">
+          <article class="card">
+            <figure class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDcwMTUwOQ&ixlib=rb-1.2.1&q=85"
+                alt="An orange painted blue, cut in half laying on a blue background"
+              />
+            </figure>
+          </article>
+        </div>
+        </div>
         <div className="navstyle"></div>
         <div class="leading-6">
           <p class="text-xl text-left text-gray-400 mt-2 ml-4">
-            Hello Folks! Coding's complexities fascinate me, offering endless innovative possibilities for creating
-            software development.
+            Hello Folks! Coding's complexities fascinate me, offering endless
+            innovative possibilities for creating software development.
             <NavLink
               to="About"
               className="
@@ -155,8 +195,7 @@ function Blog() {
           </p>
           <p class="text-xl text-left text-gray-400 mt-2 ml-4">
             I'm software developer & designer with a passion for building things
-            that are user-friendly , innovative and problem
-            solving.
+            that are user-friendly , innovative and problem solving.
             <NavLink
               to="Project"
               className="
@@ -169,8 +208,7 @@ function Blog() {
             </NavLink>
           </p>
           <p class="text-xl text-left text-gray-400 mt-2 ml-4">
-            I write articles and engaging blog posts about tech &
-            lifestyle.
+            I write articles and engaging blog posts about tech & lifestyle.
             <NavLink
               to="Viewblog"
               className="
