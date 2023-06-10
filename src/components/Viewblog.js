@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 import { FiEdit } from "react-icons/fi";
 import "./Viewblog.css";
+import Footer from "./Footer";
 function Viewblog() {
   return (
     <div className="parentdiv22">
@@ -40,6 +41,7 @@ function Viewblog() {
           </a>
           <p class="text-gray-400 text-lg flex pl-5">May 22 , 2023</p>
         </div>
+        <Footer/>
       </Container>
     </div>
   );
