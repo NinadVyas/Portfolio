@@ -1,44 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap');
 
-*, *:after, *:before {
-	box-sizing: border-box;
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
 }
 
-img {
-	max-width: 100%;
-	display: block;
-}
-
-.card-list {
-	width: 90%;
-	max-width: 319px;
+.container1 {
+ background: url("https://images.unsplash.com/photo-1574007557239-acf6863bc375?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ width: 300px;
+ height: 200px;
+ position: relative;
+ border-radius: 4%;
  margin-top: 1rem;
  margin-bottom: 1rem;
+ margin-left: 1rem;
+
+ .container__info {
+  background-color: #0e12156a;
+  padding: 40px 30px;
+  backdrop-filter: blur(1px);
+  border-radius: 4%;
+  display: inline-flex;
+
+ 
+ }
+ 
 }
+.cardsall{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 
-.card {
-	background-color: #FFF;
-	box-shadow: 0 0 0 1px rgba(#000, .05), 0 20px 50px 0 rgba(#000, .1);
-	border-radius: 15px;
-	overflow: hidden;
-	position: relative;
-	transition: .15s ease-in;
-	
-	&:hover, &:focus-within {
-		box-shadow: 0 0 0 2px #16C79A, 0 10px 60px 0 rgba(#9c2222, .1);
-			transform: translatey(-5px);
-	}
+  ;
+  width: 44rem;
+  justify-content: center;
+  align-items: center;
 }
-
-.card-image {
-	border-radius: 10px;
-	overflow: hidden;
+.nav12{
+  display: flex;
+  font-size: large;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
 }
-
-
-
-
-
 .parentdiv{
   height: auto;
   width: auto;
