@@ -1,40 +1,37 @@
 
-  
-  .parentdiv13{
-    width: auto;
-    height: 100rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .div113{
-   padding: 0 1em;
-   max-width: 75rem;
-   max-height: auto;
-   margin: 0 auto;
-   align-items: center;
-   height: auto;
+   .parentdiv123{
+     height: auto;
+     width: auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
    
-  }
-  h1{
-    font-family: 'Lexend', sans-serif;
-  }
-  p{
-    font-family: 'Lexend', sans-serif;
-  }
- 
- 
+   .div1233{
+     max-width: 650px;
+     margin: 0 auto;
+     position: relative;
+     margin-top: 2rem;
+   
+   
+   }
+   .pic{
 
-@media (max-width: 600px) {
-    .parentdiv13{
-        width: auto;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-        margin-left: 25px;
-      }
-  }
-  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    
+   }
+   h1{
+     font-family: 'Lexend', sans-serif;
+   }
+   p{
+     font-family: 'Lexend', sans-serif;
+   }
+   @media (max-width: 600px) {
+    .pic{
+      margin-left: 35px;
+    }
+
+    
+   }
