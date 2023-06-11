@@ -1,10 +1,14 @@
 import ChevronRightIcon from '@heroicons/react/24/outline/ChevronRightIcon';
 import Projectlist from './Projectlist';
-
+import Navbar from './Navbar';
+import './Project.css';
 
 const Page = () => {
   return (
-    <div className="max-w-[44rem]	mx-auto pt-12 md:pt-32 px-8 pb-8">
+    <div className='parentdiv11'>
+    <div className='div111'>
+    <Navbar/>
+    <div className="max-w-[44rem]	mx-auto pt-12 md: px-8 pb-8">
       <h1 className="text-3xl mb-4 tracking-tight text-white">Some projects that I’ve built</h1>
       <div>
          <Projectlist
@@ -62,6 +66,8 @@ const Page = () => {
         ))}
       </div>
 
+    </div>
+    </div>
     </div>
   );
 };
