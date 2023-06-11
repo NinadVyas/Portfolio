@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+  --mainColorLight: #5767aa;
+  --secondaryColor: #db2b39;
+  --textColor: #eee;
+}
+.navdiv{
+	margin-bottom: 3rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  color: var(--textColor);
+  font-family: "Lexend", sans-serif;
+
+}
+h1 {
+  font-size: 20px;
+  font-family: "Lexend", sans-serif;
+}
+.firstcomp {
+  font-family: "Lexend", sans-serif;
+}
+nav a {
+  margin: 0 1rem;
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 0rem;
+  padding-left: 0rem;
+  font-style: initial;
+  font-family: "Lexend", sans-serif;
+}
+
+nav a:hover {
+  color: #1d9bf9;
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+header div,
+nav {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+	.navdiv{
+		margin-bottom: 0;
+	}
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: 0rem;
+  }
+
+  header nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: rgb(12, 15, 17);
+    transition: 1s;
+  }
+
+  header .responsive_nav {
+    transform: translateY(100vh);
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+}
