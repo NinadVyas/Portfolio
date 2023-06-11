@@ -1,18 +1,26 @@
 
   
-  .parentdiv1{
-    width: auto;
-    height: 850px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+ .parentdiv1{
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div11{
+  max-width: 650px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 2rem;
   
-  .div11{
-   padding: 0 1em;
-   max-width: 600px;
-   margin: 0 auto;
-  }
+.abt{
+   margin-left: 2rem;
+}
+
+
+
+}
   h1{
     font-family: 'Lexend', sans-serif;
   }
@@ -20,4 +28,11 @@
     font-family: 'Lexend', sans-serif;
   }
  
- 
+  @media (max-width: 600px) {
+   .abt{
+      margin-left: 1rem;
+    }
+  
+
+    
+   }

@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "./About.css";
 import { Container } from "react-bootstrap";
+import Navbar from "./Navbar";
 function About() {
   return (
     <div className="parentdiv1">
       <Container className="div11">
-        <div>
+        <Navbar/>
+        <div className="abt">
           <h1 class="text-4xl  text-left text-white mr-3">Hey I'm Ninad👋</h1>
           <p class="text-xl text-left text-gray-400 mt-5">
             I am pursing Bachelor's Degree in Computer Engineering, 
@@ -45,7 +47,7 @@ function About() {
             </a>{" "}
             of life.
           </p>
-        </div>
+          </div>
         
       </Container>
     </div>
