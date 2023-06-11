@@ -2,10 +2,12 @@ import { Container } from "react-bootstrap";
 import { FiEdit } from "react-icons/fi";
 import "./Viewblog.css";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 function Viewblog() {
   return (
     <div className="parentdiv22">
       <Container className="div122">
+        <Navbar/>
         <div class="m-5 flex gap-32">
           <h1 class=" text-white text-2xl flex">
             <FiEdit class="mt-1 " />
