@@ -17,6 +17,8 @@ import { useRef } from "react";
 
 import Footer from "./Footer";
 
+import Navbar from "./Navbar";
+
 function Blog() {
   const mailref = useRef < LottieRefCurrentProps > null;
   
@@ -24,23 +26,7 @@ function Blog() {
     <div className="parentdiv">
       <Container className="div1">
         {/* Navbar */}
-        {/* <div className="nav12">
-      <h1 class='text-blue-500'>
-          <NavLink to='Project'>Projects</NavLink>  
-        </h1>
-        <span class='text-white'>/</span>
-        <h1 class='text-blue-500'>
-          <NavLink to='About'>About</NavLink>  
-        </h1>
-        <span class='text-white'>/</span>
-        <h1 class='text-blue-500'>
-          <NavLink to='Viewblog'>Blogs</NavLink>  
-        </h1>
-        <span class='text-white'>/</span>
-        <h1 class='text-blue-500'>
-          <NavLink to='Photo'>Frames</NavLink>  
-        </h1>
-        </div> */}
+        <Navbar/>
         <div class="imgdiv">
           <img
             alt=""
