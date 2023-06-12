@@ -21,12 +21,12 @@ import Navbar from "./Navbar";
 
 function Blog() {
   const mailref = useRef < LottieRefCurrentProps > null;
-  
+
   return (
     <div className="parentdiv">
       <Container className="div1">
         {/* Navbar */}
-        <Navbar/>
+        <Navbar />
         <div class="imgdiv">
           <img
             alt=""
@@ -142,16 +142,15 @@ function Blog() {
             </div>
           </a>
         </div>
-       <link
-   rel="stylesheet"
-   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-   integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-   crossorigin="anonymous"
-  />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+          crossorigin="anonymous"
+        />
 
-
-  {/* cards */}
-  {/* <div className="cardsall">
+        {/* cards */}
+        {/* <div className="cardsall">
 <div class="container1">
    <div class="container__info">
    <NavLink
@@ -212,8 +211,6 @@ function Blog() {
 
         <div className="navstyle"></div>
         <div class="leading-6">
-        
-          
           <p class="text-xl text-left text-gray-400 mt-2 ml-4">
             I'm software developer & designer with a passion for building things
             that are user-friendly , innovative and problem solving.
@@ -228,7 +225,7 @@ function Blog() {
               <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
             </NavLink>
           </p>
-         
+
           <p class="text-xl text-left text-gray-400 mt-2 ml-4">
             Hello Folks! Coding's complexities fascinate me, offering endless
             innovative possibilities for creating software development.
@@ -243,7 +240,7 @@ function Blog() {
               <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
             </NavLink>
           </p>
-          
+
           <p class="text-xl text-left text-gray-400 mt-2 ml-4">
             I write articles and engaging blog posts about tech & lifestyle.
             <NavLink
@@ -257,7 +254,7 @@ function Blog() {
               <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
             </NavLink>
           </p>
-         
+
           <p class="text-xl text-left text-gray-400 mt-2 ml-4">
             When I'm not immersed in code or writing, you can find me behind the
             lens, capturing moments through my photography.
@@ -272,7 +269,7 @@ function Blog() {
               <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
             </NavLink>
           </p>
-         <Footer/>
+          <Footer />
         </div>
       </Container>
     </div>

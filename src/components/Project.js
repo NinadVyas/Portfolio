@@ -53,7 +53,6 @@ const Page = () => {
           'PHP',
           'Python',
           'JAVA',
-          'Android',
           'React Native',
           'Git',
           'UI Design',
