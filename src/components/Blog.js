@@ -49,7 +49,7 @@ function Blog() {
               rel="noopener noreferrer"
             >
               <sapn
-                class=" text-gray-400 text-lg flex hover:text-blue-500 cursor-pointer 
+                class=" text-gray-400 text-xl flex hover:text-blue-500 cursor-pointer font-lexend 
              "
               >
                 <FaLinkedin class="mt-1 fill-blue-500 mr-1" />
@@ -63,8 +63,8 @@ function Blog() {
               rel="noopener noreferrer"
             >
               <sapn
-                class=" text-gray-400 text-lg flex hover:text-red-500 cursor-pointer 
-               min-[320px]: max-[600px]:ml-11"
+                class=" text-gray-400 text-xl flex hover:text-red-500 cursor-pointer font-lexend
+               min-[320px]: max-[600px]: pl-11"
               >
                 <FaYoutubeSquare class="mt-1 fill-red-500 mr-1" />
                 Youtube
@@ -77,8 +77,8 @@ function Blog() {
               rel="noopener noreferrer"
             >
               <sapn
-                class=" text-gray-400 text-lg flex hover:text-[#1D9BF9] cursor-pointer  
-              min-[320px]: max-[600px]:mr-14 pr-0.5"
+                class=" text-gray-400 text-xl flex hover:text-[#1D9BF9] cursor-pointer  font-lexend
+              min-[320px]: max-[600px]:mr-12 pr-3"
               >
                 <FaTwitter class="mt-1 fill-[#1D9BF9] mr-1" />
                 Twitter
@@ -90,7 +90,10 @@ function Blog() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <sapn class=" text-gray-400 text-lg flex hover:text-white cursor-pointer">
+              <sapn
+                class=" text-gray-400 text-xl flex hover:text-white cursor-pointer font-lexend
+                            min-[320px]: max-[600px]: gap-0.5"
+              >
                 <FaGithub class="mt-1 fill-white mr-1" />
                 Github
               </sapn>
