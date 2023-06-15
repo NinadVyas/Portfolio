@@ -1,4 +1,5 @@
 
+
 * {
  margin: 0;
  padding: 0;
@@ -82,7 +83,7 @@ a{
   margin: 15px;
   display: flex;
   gap: 0.5rem;
-  padding-top: 1rem;
+
 }
 .navstyletop{
   margin: 11px;
@@ -93,6 +94,7 @@ a{
   display: flex;
   font-family: 'Lexend', sans-serif;
   gap: 1rem;
+  
 }
 .image{
   margin-left: 25px;
@@ -119,16 +121,16 @@ a{
     background-color: rgb(12, 15, 17);
   }
   .div2{
-
-    margin-left: 2rem;
+    margin-left: 57px;
     flex-wrap: wrap;
-    
-    
-    
   }
+  
   .hpdiv1{
     padding-top: 9rem;
-    margin-left: 1rem;
+   
+  }
+  .hpdiv1 h1{
+    text-align: center;
   }
 
   .imgage{
@@ -136,10 +138,7 @@ a{
    align-items: center;
    width: 150px;
   }
-  .hpdiv p{
-    
-   font-size: x-large;
-  }
+  
   .imgdiv{
    margin-left: 100px;
    margin-bottom: 25px;

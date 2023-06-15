@@ -10,6 +10,8 @@ import {
 } from "react-icons/fa";
 import { FiArrowUpRight } from "react-icons/fi";
 import { FiChevronRight } from "react-icons/fi";
+import { FcNext } from "react-icons/fc";
+
 import { NavLink } from "react-router-dom";
 import Mail from "./assets/mail1.json";
 import Mic from "./assets/mic2.json";
@@ -18,6 +20,7 @@ import { useRef } from "react";
 import Footer from "./Footer";
 
 import Navbar from "./Navbar";
+import ChevronRightIcon from "@heroicons/react/24/outline/ChevronRightIcon";
 
 function Blog() {
   const mailref = useRef < LottieRefCurrentProps > null;
@@ -36,11 +39,11 @@ function Blog() {
         </div>
         <p className="hpdiv">
           <div className="hpdiv1">
-            <h1 class="text-2xl  text-left text-white mr-3">Hey I'm Ninad.</h1>
+            <h1 class="text-3xl  text-left text-slate-100 font-bold mr-3">Hey I'm Ninad.</h1>
 
-            <p class="text-2xl text-left text-gray-400 ">
-              I'm a passionate software engineer.
-            </p>
+            <h1 class="text-3xl text-left text-sky-400 font-bold">
+              I'm a software engineer.
+            </h1>
           </div>
           <div className="div2">
             <a
@@ -64,7 +67,7 @@ function Blog() {
             >
               <sapn
                 class=" text-gray-400 text-xl flex hover:text-red-500 cursor-pointer font-lexend
-               min-[320px]: max-[600px]: pl-11"
+               min-[320px]: max-[600px]:pl-11"
               >
                 <FaYoutubeSquare class="mt-1 fill-red-500 mr-1" />
                 Youtube
@@ -78,7 +81,7 @@ function Blog() {
             >
               <sapn
                 class=" text-gray-400 text-xl flex hover:text-[#1D9BF9] cursor-pointer  font-lexend
-              min-[320px]: max-[600px]:mr-12 pr-3"
+              min-[320px]: max-[600px]:mr-12 max-[600px]:pr-3"
               >
                 <FaTwitter class="mt-1 fill-[#1D9BF9] mr-1" />
                 Twitter
@@ -92,7 +95,7 @@ function Blog() {
             >
               <sapn
                 class=" text-gray-400 text-xl flex hover:text-white cursor-pointer font-lexend
-                            min-[320px]: max-[600px]: gap-0.5"
+                            min-[320px]: max-[600px]:gap-0.5"
               >
                 <FaGithub class="mt-1 fill-white mr-1" />
                 Github
@@ -211,69 +214,47 @@ function Blog() {
    </div>
   </div>
   </div> */}
+ 
 
+     
         <div className="navstyle"></div>
         <div class="leading-6">
+        <h1 class="text-3xl  text-left text-slate-100 font-semi-bold ml-4">
+          Intro<FcNext class='inline'/></h1>
+
           <p class="text-xl text-left text-gray-400 mt-2 ml-4">
-            I'm software developer & designer with a passion for building things
+            Hello Folks!  I'm software developer & designer with a passion for building things
             that are user-friendly , innovative and problem solving.
-            <NavLink
-              to="Project"
-              className="
-          inline-flex items-center mt-2 py-1.5 text-lg font-medium rounded-md 
-          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500
-          min-[320px]: max-[600px]:mr-64 pr-0.5 hover:underline"
-            >
-              Projects
-              <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
-            </NavLink>
+            
+           
           </p>
-
-          <p class="text-xl text-left text-gray-400 mt-2 ml-4">
-            Hello Folks! Coding's complexities fascinate me, offering endless
-            innovative possibilities for creating software development.
-            <NavLink
-              to="About"
-              className="
-          inline-flex items-center mt-2 py-1.5 text-lg font-medium rounded-md 
-          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500
-          min-[320px]: max-[600px]:mr-64 pr-0.5 hover:underline"
-            >
-              About
-              <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
-            </NavLink>
-          </p>
-
+         
           <p class="text-xl text-left text-gray-400 mt-2 ml-4">
             I write articles and engaging blog posts about tech & lifestyle.
-            <NavLink
-              to="Viewblog"
-              className="
-          inline-flex items-center mt-2 py-1.5 text-lg font-medium rounded-md 
-          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500
-          min-[320px]: max-[600px]:mr-64 pr-0.5 hover:underline"
-            >
-              Blogs
-              <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
-            </NavLink>
+           
+
+
           </p>
 
           <p class="text-xl text-left text-gray-400 mt-2 ml-4">
             When I'm not immersed in code or writing, you can find me behind the
             lens, capturing moments through my photography.
-            <NavLink
-              to="Photo"
-              className="
-          inline-flex items-center mt-2 py-1.5 text-lg font-medium rounded-md 
-          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500
-          min-[320px]: max-[600px]:mr-64 pr-0.5 hover:underline"
-            >
-              Frames
-              <FiChevronRight className="inline w-4 h-4 ml-1" strokeWidth={2} />
-            </NavLink>
+           
+
           </p>
-          <Footer />
+          <NavLink
+          to='/About'
+          className="
+          inline-flex items-center mt-2 ml-2 px-2 py-1.5 text-sm font-medium rounded-md 
+          transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500"
+        >
+          More about me
+          <ChevronRightIcon className="inline w-4 h-4" strokeWidth={2} />
+        </NavLink>
+          
         </div>
+        <Footer class='fixed' />
+
       </Container>
     </div>
   );
