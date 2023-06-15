@@ -13,7 +13,7 @@
 .navdiv{
 	margin-bottom: 3rem;
 }
-header {
+footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,7 +45,7 @@ nav a:hover {
   color: #1d9bf9;
 }
 
-header .nav-btn {
+footer .nav-btn {
   padding: 5px;
   cursor: pointer;
   background: transparent;
@@ -57,7 +57,7 @@ header .nav-btn {
   font-size: 1.8rem;
 }
 
-header div,
+footer div,
 nav {
   display: flex;
   align-items: center;
@@ -67,13 +67,13 @@ nav {
 	.navdiv{
 		margin-bottom: 0;
 	}
-  header .nav-btn {
+  footer .nav-btn {
     visibility: visible;
     opacity: 1;
     margin-bottom: 0rem;
   }
 
-  header nav {
+  footer nav {
     position: fixed;
     top: -100vh;
     left: 0;
@@ -88,7 +88,7 @@ nav {
     transition: 0.75s;
   }
 
-  header .responsive_nav {
+  footer .responsive_nav {
     transform: translateY(100vh);
   }
 

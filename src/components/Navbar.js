@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
 	<div className='navdiv'>
-    <header>
+    <footer>
       {" "}
       <h1 class=" text-gray-300 font-bold text-2xl hover:text-[#1D9BF9]">
 		<a className="firstcomp" href='/Blog'>
@@ -33,7 +33,7 @@ function Navbar() {
       <button className="nav-btn" onClick={showNavbar}>
         <FaBars />
       </button>
-    </header>
+    </footer>
 	</div>
   );
 }
