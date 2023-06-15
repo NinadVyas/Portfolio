@@ -8,9 +8,10 @@ const Page = () => {
     <div className='parentdiv11'>
     <div className='div111'>
     <Navbar/>
-    <div className="max-w-[44rem]	mx-auto pt-12 md: px-8 pb-8">
+    <div className="max-w-[44rem]	mx-auto md: px-8 pb-8">
+      <div className='proj'>
       <h1 className="text-3xl mb-4 tracking-tight text-white">Some projects that I’ve built</h1>
-      <div>
+      
          <Projectlist
           title="RoomRealm"
           description="A chat room where everybody can talk about anything!"

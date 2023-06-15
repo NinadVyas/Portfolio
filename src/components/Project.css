@@ -22,4 +22,8 @@
     font-family: 'Lexend', sans-serif;
   }
  
- 
+  @media (max-width: 600px) {
+        .proj{
+          margin-top: 2.5rem;
+        }
+    }
