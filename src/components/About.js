@@ -43,7 +43,7 @@ function About() {
             as well.
           </p>
           <p class="text-xl text-left text-gray-400 mt-5">
-            In my meantime I Play some{" "}
+            In my meantime I Play {" "}
             <a
               class="text-blue-600 hover:underline"
               href="https://www.chess.com/member/ninadv_07"

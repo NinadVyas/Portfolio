@@ -245,7 +245,7 @@ function Blog() {
           <NavLink
           to='/About'
           className="
-          inline-flex items-center mt-2 ml-2 px-2 py-1.5 text-sm font-medium rounded-md 
+          inline-flex items-center mt-2 ml-2 px-2 py-1.5 text-md font-medium rounded-md 
           transition-colors duration-200 hover:bg-link/10 focus-visible:bg-link/10 text-blue-500"
         >
           More about me
