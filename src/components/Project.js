@@ -11,7 +11,12 @@ const Page = () => {
     <div className="max-w-[44rem]	mx-auto md: px-8 pb-8">
       <div className='proj'>
       <h1 className="text-3xl mb-4 tracking-tight text-white">Some projects that I’ve built</h1>
-      
+        <Projectlist
+          title="Cryptobase"
+          description="A platform where you can save & see the volumes , prices of coins."
+          logo="/assets/projects/cry.png"
+          link="https://github.com/NinadVyas/WebCryptoBase"
+        />
          <Projectlist
           title="RoomRealm"
           description="A chat room where everybody can talk about anything!"
