@@ -33,7 +33,7 @@ function Blog() {
         <div class="imgdiv">
           <img
             alt=""
-            src="https://media.licdn.com/dms/image/D5603AQEUnnUZdBILTw/profile-displayphoto-shrink_800_800/0/1678530059186?e=2147483647&v=beta&t=Ue88nJSLY_rcMhw13P1VRYPln_7qmgRM2dCFwlmWrcU"
+            src="https://avatars.githubusercontent.com/u/115214615?s=400&u=59b6e13bcd007cee9fb14f5bee2c658503b1a2f6&v=4"
             className="image"
           />
         </div>
